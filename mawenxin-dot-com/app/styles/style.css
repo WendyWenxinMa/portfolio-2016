@@ -84,6 +84,29 @@ p{
 	text-align:center;
 }
 
+
+#actions{
+	position:fixed;
+	top: 73px;
+	left: 30px;
+	z-index: 99999;
+}
+#actions a{
+	background: rgba(0,0,0,0.8);
+	padding: 7px;
+	margin: 2px;
+	color: #ccc;
+	display: inline-block;
+}
+#actions a:hover{
+	color: #fff;
+	background: #81A140;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+	background: #555;
+}
+
 /*============Nav Bar============*/
 #nav-menu li {
 	display:inline-block;
@@ -137,7 +160,7 @@ p{
 
 #container {
   width: 100%;
-  z-index: -1;
+  z-index: 1;
   margin: 0 auto;
 }
 #container > div {
@@ -172,6 +195,10 @@ p{
 
 #intro-content-center{
 	text-align: center;
+	position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: -90px;
     
 }
 
@@ -188,10 +215,9 @@ p{
 
 #intro-section span{
 	font-weight: 600;
-	font-size: 24px;
-	/*color: #47bac1;*/
-	color: #333;
-	margin: 0px;
+    font-size: 1.5em;
+    color: #555;
+    margin: 0px;
 
 }
 
@@ -215,9 +241,9 @@ p{
 
 
 #about-section .left-content .left-text-content{
-	width: 80%;
-    float: right;
-    padding-right: 10%;
+	width: 600px;
+    /*padding-right: 10%;*/
+    margin: 0 auto;
 }
 
 #about-section .left-content h3{
@@ -228,10 +254,10 @@ p{
 
 #about-section .left-content p{
 	/*color: #2c7478;*/
-	color: #333;
+	color: #555;
 	font-size: 1.2em;
 	text-align: justify;
-	margin: 10px 0;
+	margin: 2em 0;
 	-webkit-animation-delay: 0.5s;
 }
 
@@ -258,6 +284,8 @@ p{
 
 #about-section .right-content .skills{
 	margin-top: 30%;
+    text-align: left;
+    padding-left: 50px;
 }
 
 
@@ -276,8 +304,9 @@ p{
 }
 
 #about-section .right-content ul{
-	display: inline-block;
+	/*display: inline-block;*/
 	vertical-align: top;
+	margin: 30px 0;
 }
 
 #about-section .right-content ul li{
@@ -359,55 +388,67 @@ p{
 
 #projects-section .projects-title-box{
 	width: 100%;
-	height: 25%;
+	max-height: 25%;
 }
-#projects-section .projects-showcase{
-	width: 100%;
-	height: 60%;
-	padding-top: 10%;
-    background: #358a8f;
+
+
+/* Overwriting styles for control arrows for slides
+* --------------------------------------- */
+.fp-controlArrow.fp-prev {
+	left: 50px;
+	margin-top: 5%;
+	border-color: transparent #245658 transparent transparent;
+}
+.fp-controlArrow.fp-next{
+	right: 50px;
+	margin-top: 5%;
+	border-color: transparent transparent transparent #245658;
+}
+
+.fp-slides{
+	height: 75%;
+	background: #358a8f;
+}
+
+.fp-slides .fp-tableCell{
+	height: auto!important;
+}
+
+.slide img{
+	width: 40%;
+    margin-left: 120px;
+    float: left;
+}
+
+.slide .project-description{
+	width: 35%;
     display: inline-block;
-    vertical-align: top;
+    margin-right: 120px;
 }
 
-#projects-section ul{
-	padding: 0;
+.slide .project-description h3{
+	color: #fefefe;
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 2;
 }
 
-#projects-section .projects-showcase>li{
-	width: 20%;
-	margin: 0.5%;
-	height: 80%;
-	display: inline-block;
-	vertical-align: top;
-
+.slide .project-description h5{
+	color: #eee;
+    font-size: 1em;
+    line-height: 2;
+    font-style: italic;
+    font-weight: 700;
 }
 
-#projects-section .projects-showcase>li img{
-	width: 100%;
-	height: 100%;
-	object-fit: fill;
-}
+.slide .project-description h6{
+	font-size: 1.1em;
+    margin: 0 auto;
+    text-align: justify;
+    color: #fff;
+    margin-top: 10px;
+    max-width: 400px;
 
-#projects-section .projects-showcase>.short-col{
-	width: 15%;
-}
-#projects-section .projects-showcase .col-w-rows{
-	width: 100%;
-	height: 100%;
-}
-#projects-section .projects-showcase .col-w-rows>li{
-	list-style: none;
-	height: 48%;
-	width: 100%;
-	margin-bottom: 5%;
-
-}
-
-#projects-section .projects-showcase .col-w-rows img{
-	width: 100%;
-	height: 100%;
-	object-fit: fill;
 }
 
 /*================ contact section ================*/
@@ -424,15 +465,19 @@ p{
     font-weight: 200;
     text-align: center;
     color: #888;
+    line-height: 2;
 }
 
 #contact-section p{
 	font-size: 1.2em;
 	font-weight: 200;
 	padding-bottom: 20px;
-	color: #333;
+	color: #555;
 	width: 500px;
 	margin:0 auto;
+}
+#contact-section .email-button{
+	margin-top: 20px;
 }
 
 #contact-section .email-button a{
@@ -444,6 +489,12 @@ p{
 	text-decoration: none;
 	cursor: pointer;
 	font-weight: 600;
+}
+
+#contact-section .email-button a:hover{
+	background: #47bac1;
+	color: #fff;
+
 }
 
 #contact-section .divide-line{
@@ -491,7 +542,42 @@ p{
 /*===========================================================================*/
 
 @media (min-width: 768px) and (max-width: 960px) {
+	#about-section .left-content .left-text-content{
+		width: 400px;
+	}
+	#about-section .right-content .skills{
+		padding-left: 0;
+		margin-top: 80%; 
+	}
 
+	.slide .project-description{
+		width: 60%;
+		margin-right: 0;
+	}
+
+	.slide .project-description h3{
+		font-size: 1.5em;
+		line-height: 1.2em;
+	}
+
+	.slide .project-description h5{
+		font-size: 0.8em;
+		margin-top: 1em;
+		line-height: 1.2;
+	}
+
+	.slide .project-description h6{
+		width: auto;
+		font-size: 0.9em;
+		/*display: none;*/
+	}
+
+	.slide img{
+		width: 60%;
+   		margin-top: 20px;
+   		float: none;
+   		margin-left: 0;
+	}
 
 }
 
@@ -518,8 +604,8 @@ p{
 	}
 
 	#m_logo{
-		margin-left: 0;
-		z-index: 1;
+		margin: 0;
+		z-index: -1;
 	}
 
 	#nav-menu{
@@ -527,13 +613,13 @@ p{
 	}
 
 	#intro-section pre{
-		font-size: 55px;
+		font-size: 50px;
 	}
 
 
 	#about-section .left-content .left-text-content{
 		width: auto;
-		margin-top: 50px;
+		margin-top: 70px;
 
 	}
 
@@ -546,18 +632,19 @@ p{
 	}
 
 	#about-section .left-content{
-		width: 100%;
+		width: 90%;
 		margin-top: 30%;
 		background: #358a8f;
 		border-top: 10px solid #2b7275;
 	}
 
 	#about-section .left-content p{
-		font-size: 1em;
+		font-size: 0.9em;
 	    text-align: left;
 	    color: #fff;
-	    margin: 15px 0;
+	    margin: 10px 0;
 	    padding: 0 10px;
+
 	}
 
 	#about-section .left-content p span{
@@ -565,7 +652,7 @@ p{
 	}
 
 	#about-section .right-content img{
-		width: 150px;
+		width: 120px;
 		margin-top: 40%;
 		margin-left: -40%;
 	}
@@ -579,26 +666,61 @@ p{
 	}
 
 	#projects-section .projects-title-box{
-		margin-top: 20%;
+		height: 25%;
 	}
-
+	
 	#projects-section .content p{
-		width: 70%;
-		font-size: 1.1em;
+		width: 90%;
+		font-size: 0.9em;
+		line-height: 1.2;
 	}
 
-	#projects-section .projects-showcase{
-		margin-top: 80px;
-		height: 60%;
-		padding-top: 10%;
+	#projects-section .content h1{
+		font-size: 1.5em;
+		padding-top: 30px;
+	}
+	.slide .project-description{
+		width: 60%;
+	    text-align: center;
+	    margin: 0 auto;
 	}
 
-	#projects-section .projects-showcase>li{
-		height: auto;
+	.fp-controlArrow.fp-next{
+		right: 10px;
+    	margin-top: 20%;
+	}
+
+	.fp-controlArrow.fp-prev{
+		left: 10px;
+    	margin-top: 20%;
+	}
+
+	.slide .project-description h3{
+		font-size: 1.5em;
+		line-height: 1.2em;
+	}
+
+	.slide .project-description h5{
+		font-size: 0.8em;
+		margin-top: 1em;
+		line-height: 1.2;
+	}
+
+	.slide .project-description h6{
+		width: auto;
+		font-size: 0.9em;
+		display: none;
+	}
+
+	.slide img{
+		width: 60%;
+   		margin-top: 20px;
+   		float: none;
+   		margin-left: 0;
 	}
 
 	#contact-section p{
-		font-size: 1.1em;
+		font-size: 1em;
 	    width: 80%;
 	    font-weight: 400;
 	    color: #555;

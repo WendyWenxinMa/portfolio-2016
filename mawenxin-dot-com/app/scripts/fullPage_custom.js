@@ -18,25 +18,7 @@ $(document).ready(function(){
             navigation:true,
             continuousVertical:false,
             paddingTop: '20px',
-            css3: true,
-            // onLeave: function(index, nextIndex, direction){
-            //  console.log("onLeave--" + "index: " + index + " nextIndex: " + nextIndex + " direction: " +  direction);
-            // },
-            // afterLoad: function(anchorLink, index){
-            //  console.log("afterLoad--" + "anchorLink: " + anchorLink + " index: " + index );
-            // },
-            // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
-            //  console.log("afterSlideLoad--" + "anchorLink: " + anchorLink + " index: " + index + " slideAnchor: " + slideAnchor + " slideIndex: " + slideIndex);
-            // },
-            // onSlideLeave: function(anchorLink, index, slideIndex, direction){
-            //  console.log("onSlideLeave--" + "anchorLink: " + anchorLink + " index: " + index + " slideIndex: " + slideIndex + " direction: " + direction);
-            // },
-            // afterRender: function(){
-            //  console.log("afterRender");
-            // },
-            // afterResize: function(){
-            //  console.log("afterResize");
-            // }
+            css3: true
         });
     }
 
