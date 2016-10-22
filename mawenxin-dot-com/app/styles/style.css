@@ -1,0 +1,610 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800";
+
+div {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html body {
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0px;
+	padding: 0px;
+	overflow-x:hidden;
+	width: 100%;
+}
+
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-size: 6em;
+}
+p{
+	font-size: 2em;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.section{
+	text-align:center;
+}
+
+/*============Nav Bar============*/
+#nav-menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #333;
+	
+}
+#nav-menu li.active{
+	color: #fff;
+}
+#nav-menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#nav-menu li.active a:hover{
+	color: #000;
+}
+#nav-menu li a:hover{
+	color: #358a8f;
+}
+#nav-menu li a,
+#nav-menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#nav-menu li.active a{
+	color: #358a8f;
+}
+#nav-menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 200;
+	width: 100%;
+	padding: 0;
+	margin:0;
+	text-align: right;
+}
+
+
+/*==========logo effect===========*/
+#m_logo {
+	position: absolute;
+	top: 0;
+	margin: 20px;
+	z-index: 100;
+}
+
+/*==========bubble effect===========*/
+
+#container {
+  width: 100%;
+  z-index: -1;
+  margin: 0 auto;
+}
+#container > div {
+  border-radius: 50%;
+  position: absolute;
+  /*orange*/
+  margin: 100px;
+  background: rgba(71, 186, 193, 0.5);
+  border: 0.8px solid rgba(71, 186, 193, 0.4);
+}
+#container > div:nth-child(1n) {
+  /*purple*/
+  background: rgba(71, 186, 193, 0.1);
+  border: 0.8px solid rgba(71, 186, 193, 0.2);
+}
+#container > div:nth-child(2n) {
+  /*blue*/
+  background: rgba(71, 186, 193, 0.3);
+  border: 0.8px solid rgba(71, 186, 193, 0.4);
+}
+#container > div:nth-child(3n) {
+  /*green*/
+  background: rgba(71, 186, 193, 0.2);
+  border: 0.8px solid rgba(71, 186, 193, 0.3);
+}
+
+/*=========intro section=========*/
+#intro-section{
+    width: 100%;
+    z-index: 100;
+}
+
+#intro-content-center{
+	text-align: center;
+    
+}
+
+
+#intro-section pre{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 80px;
+	color: #358a8f;
+	text-shadow: 5px 2px #2b7275;
+	margin: 0px 0 30px 0;
+	font-weight: 700;
+
+}
+
+#intro-section span{
+	font-weight: 600;
+	font-size: 24px;
+	/*color: #47bac1;*/
+	color: #333;
+	margin: 0px;
+
+}
+
+
+
+/*=========about section=========*/
+
+#about-section{
+	width: 100%;
+}
+
+#about-section .left-content{
+	width: 60%;
+	padding: 3% 5%;
+	display: inline-block;
+	float: left;
+	top: 0;
+	position: relative;
+	z-index: 100;
+}
+
+
+#about-section .left-content .left-text-content{
+	width: 80%;
+    float: right;
+    padding-right: 10%;
+}
+
+#about-section .left-content h3{
+	font-size: 30px;
+	font-weight: 400;
+	color: #47bac1;
+}
+
+#about-section .left-content p{
+	/*color: #2c7478;*/
+	color: #333;
+	font-size: 1.2em;
+	text-align: justify;
+	margin: 10px 0;
+	-webkit-animation-delay: 0.5s;
+}
+
+#about-section .left-content p:nth-child(1)::first-letter {
+    /*color: #47bac1;*/
+    font-size: 300%;
+    line-height: 1px;
+}
+
+
+#about-section .right-content{
+	width: 20%;
+	height: 100%;
+    padding: 0 5%;
+    display: inline;
+    top: 0;
+    background: #358a8f;
+    /*border-top: 10px solid #2b7275;*/
+    color: #fff;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+}
+
+#about-section .right-content .skills{
+	margin-top: 30%;
+}
+
+
+#about-section .right-content img{
+	width: 50%;
+    float: left;
+    margin-left: -50%;
+    margin-top: 10%;
+}
+
+#about-section .right-content h3{
+	font-size: 30px;
+	font-weight: 300;
+	color: #beeeef;
+	padding-left: 40px;
+}
+
+#about-section .right-content ul{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#about-section .right-content ul li{
+	list-style: none;
+	line-height: 1.8;
+}
+
+#about-section .right-content ul li i{
+	font-weight: 300;
+	color: #eee;
+	font-size: 1em;
+}
+
+#about-section .right-content .decr-line{
+	width: 60%;
+	height: 1%;
+	border-radius: 5px;
+	background: #2c7478;
+	-ms-transform: rotate(-30deg); /* IE 9 */
+    -webkit-transform: rotate(-30deg); /* Safari */
+    transform: rotate(-30deg);
+    position: absolute;
+    margin-left: -20%;
+    margin-top: 80%;
+    z-index: -1;
+}
+
+
+/*============== projects section ================*/
+#projects-section{
+
+}
+
+.product-box {
+  background-color: rgba(247,99,62,0.8);
+}
+
+#projects-section .content{
+	height: 100vh;
+	width: 100%;
+	float: left;
+	color: #333;
+	margin: 0 auto;
+	/*margin-top: 40px;*/
+}
+
+#projects-section .content h1{
+	text-align: center;
+    font-size: 2.5em;
+    color: #358a8f;
+    font-weight: bold;
+    line-height: 2;
+}
+
+#projects-section .content p{
+	text-align: center;
+	width: 60%;
+	margin: 0 auto;
+	color: #777;
+	font-size: 1.2em;
+	line-height: 1.5;
+	margin-bottom: 50px;
+}
+
+
+#projects-section .content .special-link{
+	color: #358a8f;
+	text-decoration: none;
+	border-bottom: 1px dashed #358a8f;
+	transition-duration: 0.2s;
+}
+
+#projects-section .content .special-link:hover{
+	background: #eee;
+	border-radius: 3px;
+	border-bottom: 3px dashed #358a8f;
+}
+
+
+#projects-section .projects-title-box{
+	width: 100%;
+	height: 25%;
+}
+#projects-section .projects-showcase{
+	width: 100%;
+	height: 60%;
+	padding-top: 10%;
+    background: #358a8f;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#projects-section ul{
+	padding: 0;
+}
+
+#projects-section .projects-showcase>li{
+	width: 20%;
+	margin: 0.5%;
+	height: 80%;
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+#projects-section .projects-showcase>li img{
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+#projects-section .projects-showcase>.short-col{
+	width: 15%;
+}
+#projects-section .projects-showcase .col-w-rows{
+	width: 100%;
+	height: 100%;
+}
+#projects-section .projects-showcase .col-w-rows>li{
+	list-style: none;
+	height: 48%;
+	width: 100%;
+	margin-bottom: 5%;
+
+}
+
+#projects-section .projects-showcase .col-w-rows img{
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+/*================ contact section ================*/
+
+#contact-section{
+/*	height: 100vh;
+*/	margin: 0 auto;
+	text-align: center;
+	/*width: 50%;*/
+}
+
+#contact-section h1{
+	font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    color: #888;
+}
+
+#contact-section p{
+	font-size: 1.2em;
+	font-weight: 200;
+	padding-bottom: 20px;
+	color: #333;
+	width: 500px;
+	margin:0 auto;
+}
+
+#contact-section .email-button a{
+	border: 2px solid #47bac1;
+	border-radius: 2px;
+	color: #47bac1;
+	margin: 0 auto;
+	padding: 5px 50px;
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+#contact-section .divide-line{
+	width: 60%;
+	height: 1px;
+	background: #ccc;
+	margin: 0px auto;
+	margin-top: 50px;
+	margin-bottom: 10px;
+
+}
+
+#social-icons{
+	display: inline;
+}
+
+#social-icons li{
+	list-style: none;
+	display: inline-block;
+	padding: 10px;
+}
+
+#social-icons li a i{
+	font-size: 2em;
+}
+
+#social-icons li a .fa-github-square{
+	color: #000000;
+}
+
+#social-icons li a .fa-behance-square{
+	color: #1769ff;
+}
+
+#social-icons li a .fa-linkedin-square{
+	color: #007bb5;
+}
+
+
+
+
+
+/*===========================================================================*/
+/*==============================@media --- tablet size=======================*/
+/*===========================================================================*/
+
+@media (min-width: 768px) and (max-width: 960px) {
+
+
+}
+
+
+
+
+/*===========================================================================*/
+/*==============================@media --- mobile size=======================*/
+/*===========================================================================*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+	
+	/*Overwrite the navugation widget style*/
+	#fp-nav{
+		top:50px;
+	}
+
+	#fp-nav ul li, .fp-slidesNav ul li{
+		display: inline-block;
+	}
+
+	#fp-nav ul li a span, .fp-slidesNav ul li a span{
+		background: #2b7275;
+	}
+
+	#m_logo{
+		margin-left: 0;
+		z-index: 1;
+	}
+
+	#nav-menu{
+		display: none;
+	}
+
+	#intro-section pre{
+		font-size: 55px;
+	}
+
+
+	#about-section .left-content .left-text-content{
+		width: auto;
+		margin-top: 50px;
+
+	}
+
+	#about-section .right-content{
+		width: 50%;
+		background: none;
+		border-top: none;
+		z-index: 100;
+		padding: 0;
+	}
+
+	#about-section .left-content{
+		width: 100%;
+		margin-top: 30%;
+		background: #358a8f;
+		border-top: 10px solid #2b7275;
+	}
+
+	#about-section .left-content p{
+		font-size: 1em;
+	    text-align: left;
+	    color: #fff;
+	    margin: 15px 0;
+	    padding: 0 10px;
+	}
+
+	#about-section .left-content p span{
+		color: #fff!important;
+	}
+
+	#about-section .right-content img{
+		width: 150px;
+		margin-top: 40%;
+		margin-left: -40%;
+	}
+
+	#about-section .right-content .decr-line{
+		display: none;
+	}
+
+	#about-section .right-content ul{
+		display: none;
+	}
+
+	#projects-section .projects-title-box{
+		margin-top: 20%;
+	}
+
+	#projects-section .content p{
+		width: 70%;
+		font-size: 1.1em;
+	}
+
+	#projects-section .projects-showcase{
+		margin-top: 80px;
+		height: 60%;
+		padding-top: 10%;
+	}
+
+	#projects-section .projects-showcase>li{
+		height: auto;
+	}
+
+	#contact-section p{
+		font-size: 1.1em;
+	    width: 80%;
+	    font-weight: 400;
+	    color: #555;
+	    margin: 20px auto;
+	}
+
+}
+
+

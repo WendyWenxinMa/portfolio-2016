@@ -1,0 +1,15 @@
+{
+  "name": "mawenxin-dot-com",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "modernizr": "~2.8.1",
+    "components-font-awesome": "^4.6.3",
+    "fullpage.js": "^2.8.8",
+    "typed.js": "^1.1.4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  }
+}
