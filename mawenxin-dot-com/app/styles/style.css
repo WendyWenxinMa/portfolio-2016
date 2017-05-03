@@ -619,7 +619,7 @@ p{
 
 	#about-section .left-content .left-text-content{
 		width: auto;
-		margin-top: 70px;
+		margin-top: 40px;
 
 	}
 
@@ -634,6 +634,7 @@ p{
 	#about-section .left-content{
 		width: 90%;
 		margin-top: 30%;
+		height: 80%;
 		background: #358a8f;
 		border-top: 10px solid #2b7275;
 	}
@@ -653,8 +654,8 @@ p{
 
 	#about-section .right-content img{
 		width: 120px;
-		margin-top: 40%;
-		margin-left: -40%;
+		margin-top: 30%;
+		margin-left: -60px;
 	}
 
 	#about-section .right-content .decr-line{
