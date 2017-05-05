@@ -190,7 +190,7 @@ html body{
 
 #registration-section .right-content img{
 	width: 100%;
-	 box-shadow: 10px 10px 5px #aaa;
+	box-shadow: 10px 10px 5px #aaa;
 }
 
 #registration-contanier .arrow-up{
@@ -242,10 +242,22 @@ html body{
 
 #payment-section .process-image-container img{
 	width: 500px;
-    margin-left: -200px;
+    margin-left: -150px;
+    border: 1px solid #eee;
+    box-shadow: 10px 0px 10px #ccc;
 }
 
-
+#payment-section .process-image-container img:nth-child(1){
+    width: 450px;
+    -webkit-animation-delay: 0.2s;
+}
+#payment-section .process-image-container img:nth-child(2){
+    -webkit-animation-delay: 0.8s;
+}
+#payment-section .process-image-container img:nth-child(3){
+    width: 400px;
+    -webkit-animation-delay: 1.2s;
+}
 
 
 /*===============collaboration===============*/
@@ -296,7 +308,7 @@ html body{
 
 #collaboration-section .right-content img{
 	width: 100%;
-	 box-shadow: 10px 10px 5px #aaa;
+	 box-shadow: 10px 10px 10px #ccc;
 }
 
 /*==================learn more section==================*/
