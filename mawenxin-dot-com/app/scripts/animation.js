@@ -1,5 +1,5 @@
 jQuery(function($) {
-  
+  console.log("in animation.js");
   // Function which adds the 'animated' class to any '.animatable' in view
   var doAnimations = function() {
     
