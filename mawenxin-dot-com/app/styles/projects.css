@@ -90,6 +90,7 @@ html body{
 .project-container .project-involvement ul li{
 	color: #777;
 	font-size: 20px;
+	margin-bottom: 10px;
 }
 
 .project-summary{
@@ -158,7 +159,7 @@ html body{
 }
 
 #registration-section .left-content{
-    width: 30%;
+    width: 350px;
     margin-right: 20px;
     margin-top: 40px;
     display: inline-block;
@@ -183,14 +184,14 @@ html body{
 }
 
 #registration-section .right-content{
-    width: 65%;
+    width: 780px;
     display: inline-block;
     vertical-align: top;
 }
 
 #registration-section .right-content img{
 	width: 100%;
-	box-shadow: 10px 10px 5px #aaa;
+	box-shadow: 10px 10px 5px #ddd;
 }
 
 #registration-contanier .arrow-up{
@@ -276,8 +277,8 @@ html body{
 }
 
 #collaboration-section .left-content{
-    width: 30%;
-    margin-right: 20px;
+    width: 300px;
+    margin-right: 40px;
     margin-top: 40px;
     display: inline-block;
     vertical-align: top;
