@@ -546,9 +546,9 @@ p{
 }
 
 #contact-section .email-button a{
-	border: 2px solid #47bac1;
+	border: 2px solid #358a8f;
 	border-radius: 2px;
-	color: #47bac1;
+	color: #358a8f;
 	margin: 0 auto;
 	padding: 5px 50px;
 	text-decoration: none;
@@ -557,7 +557,7 @@ p{
 }
 
 #contact-section .email-button a:hover{
-	background: #47bac1;
+	background: #358a8f;
 	color: #fff;
 
 }
